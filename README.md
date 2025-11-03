@@ -67,7 +67,6 @@ All evaluation metrics (accuracy, precision, recall, F1-score) achieved a perfec
 This result typically indicate overfitting or data leakage, in this case, the dataset contains only 18 unique sentences repeated many times.<br/>
 Therefore, the model is memorizing rather than learning to generalize.
 
-
 ## BERT Model
 For the BERT-based model, the evaluation was primarily based on training loss since the dataset size was too small to support a meaningful validation split.
 The training loss consistently decreased over time, indicating strong overfitting.<br/><br/>
@@ -78,6 +77,10 @@ Similar to the classical model, BERT most likely memorized the dataset rather th
 ## Model Artefact
 - Classical ML Model (Logistic Regression + TF-IDF): ./models/lr_model/
 - BERT model: ./models/bert_sentiment_model/
+
+**Note**
+The BERT model is compressed due to GitHub's file size limitations.<br/>
+Before running inference, unzip the model.zip.001 - model.zip.063.
 
 ## Model Usage:
 Both models can be loaded and used for inference as demonstrated in the accompanying Jupyter Notebook.<br/>
